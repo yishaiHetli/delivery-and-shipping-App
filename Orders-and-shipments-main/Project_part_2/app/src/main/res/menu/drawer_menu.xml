@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nv_first_drawer"
+              android:icon="@drawable/ic_first_drawer"
+              android:title="Nearby delivery" />
+        <item android:id="@+id/nv_second_drawer"
+            android:icon="@drawable/ic_second_drawer"
+            android:title="Need to deliver" />
+        <item android:id="@+id/nv_third_drawer"
+            android:icon="@drawable/ic_third_drawer"
+            android:title="Delivered" />
+    </group>
+
+
+</menu>

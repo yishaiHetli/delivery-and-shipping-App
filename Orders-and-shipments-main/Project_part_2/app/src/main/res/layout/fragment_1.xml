@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Fragment1">
+
+    <EditText
+        android:id="@+id/et_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="@string/enter_your_latitudes"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginStart="5dp"
+        android:inputType="numberDecimal"
+        android:autofillHints="latitudes" />
+
+    <EditText
+        android:id="@+id/et_lng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/et_lat"
+        android:hint="@string/enter_your_longitude"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:inputType="numberDecimal"
+        android:autofillHints="longitude" />
+
+    <Button
+        android:id="@+id/locBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_lng"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/set_location"
+        android:textAlignment="center"
+        style="@style/my_button_style"/>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/infoListView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/locBtn"
+        android:choiceMode="multipleChoice"
+        android:scrollbarSize="10dp"/>
+    <Button
+        android:id="@+id/btn_take"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoListView"
+        android:text="@string/take_item"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/my_button_style"
+        android:visibility="gone"
+        />
+</RelativeLayout>
